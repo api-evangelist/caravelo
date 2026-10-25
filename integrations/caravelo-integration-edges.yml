@@ -1,0 +1,16 @@
+generated: '2026-10-25'
+method: none
+source:
+- https://zapier.com/apps/caravelo/integrations
+- https://n8n.io/integrations/caravelo/
+- https://composio.dev/toolkits/caravelo
+- https://monid.ai/tools/caravelo
+checked:
+- https://composio.dev/toolkits/caravelo
+- https://monid.ai/tools/caravelo
+- https://n8n.io/integrations/caravelo/
+- https://zapier.com/apps/caravelo/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

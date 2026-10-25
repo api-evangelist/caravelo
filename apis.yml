@@ -1,25 +1,86 @@
 aid: caravelo
+
 name: Caravelo
-description: 'Caravelo is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by adaraventurepartners) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Caravelo provides travel subscription solutions that increase revenue and market share, reduce seasonality, and create better customer experiences. It offers a platform for travel operators to sell subscription-based travel plans, enabling flexible, recurring travel purchases and improving cash flow.'
+
 url: https://raw.githubusercontent.com/api-evangelist/caravelo/refs/heads/main/apis.yml
+
 x-type: company
+
+image: https://www.caravelo.com/wp-content/uploads/2023/07/Travel-subscription-company-1-1024x654.png
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-25'
+
 modified: '2026-10-25'
+
 tags:
 - Company
-apis: []
+- Travel
+- Subscription
+- Platform
+- SaaS
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- adaraventurepartners
+
 common:
+- type: Conformance
+  url: conformance/caravelo-conformance.yml
+- type: Hosts
+  url: hosts/caravelo-hosts.yml
+- type: Vendors
+  url: vendors/caravelo-vendors.yml
+- type: SDKs
+  url: packages/caravelo-packages.yml
+- type: Packages
+  url: packages/caravelo-packages.yml
+- type: TermsOfService
+  url: https://www.caravelo.com/legal-notice
+- type: PrivacyPolicy
+  url: https://www.caravelo.com/privacy-policy
+- type: Newsroom
+  url: https://www.caravelo.com/news
+- type: Documentation
+  url: https://docs.caravelo.com/
+- type: GitHubOrganization
+  url: https://github.com/caravelo
+- type: DomainSecurity
+  url: security/caravelo-domain-security.yml
 - type: Website
   url: https://www.caravelo.com
+
+apis: []
+
+x-backed-by:
+- adaraventurepartners
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-25'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://api.caravelo.com/mcp
+    status: 401
+  - url: https://www.caravelo.com
+    status: 200
+x-enrichment:
+  date: '2026-10-25'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

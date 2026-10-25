@@ -1,0 +1,18 @@
+generated: '2026-10-25'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.caravelo.com/privacy-policy/
+sources:
+- https://www.caravelo.com/privacy-policy/
+- https://www.caravelo.com/wp-content/uploads/2023/04/Information_Security_Policy_Website_v2.pdf
+- https://www.caravelo.com/privacy-policy/
+standards:
+- id: iso-27001
+  conforms: true
+  evidence: In order to do so, we follow the guidelines of internationally recognized standards regarding information security and data protection,
+    such as ISO 27001 and PCI DSS, not to mention the European General Data Protection Regulation.
+- id: pci-dss
+  conforms: true
+  evidence: In order to do so, we follow the guidelines of internationally recognized standards regarding information security and data protection,
+    such as ISO 27001 and PCI DSS, not to mention the European General Data Protection Regulation.
+docs: https://www.caravelo.com/privacy-policy/
